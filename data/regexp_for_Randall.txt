@@ -1,0 +1,25 @@
+##Delete rows containing only family name:
+^(.*)(aceae)$ ## ^ = start of line, .* = anything, (aceae) = text string, $ = end of line
+##replace all \r\n markers with a comma
+\r\n
+
+#Answer for extracting matching lines:
+^[a-zA-Z]+,[a-zA-Z]+
+see https://stackoverflow.com/questions/49737460/match-up-to-the-nth-occurrence-of-a-string-using-regular-expressions
+
+#This was finally done in sed (through cygwin) according to the above link:
+sed -n s/^([[:alpha:]][[:alpha:]]*,[[:alpha:]][[:alpha:]]*).*/1/p randallCSV_v1.csv > randallCSV_postSED.csv
+
+
+###### NOTES ####### (not used in the end)
+^([^_]*_[^_]*)_.*$
+(https://stackoverflow.com/questions/7449564/regex-return-all-before-the-second-occurrence)
+^         # the start of the input
+(         # start group 1
+  [^_]*   #   zero or more chars other than `_`
+  _       #   a literal `_`
+  [^_]*   #   zero or more chars other than `_`
+)         # end group 1
+_         # a literal `_`
+.*        # consume the rest of the string
+$         # the end of the input

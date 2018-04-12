@@ -1,0 +1,55 @@
+,cn_number,reporter,partner_num,partner,product,X2000,X2001,X2002,X2003,X2004,X2005,X2006,X2007,X2008,X2009,X2010,X2011,X2012,X2013,X2014,X2015,X2016,X2017,Reporter.Code,Partner.Code,Product.Code,source,reporter2iso,partner2iso
+6,1,Anguilla,2.1,St. Kitts and Nevis,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,AV,A1,M2,GATS,AI,KN
+7,1,Anguilla,2.2,Antigua and Barbuda,Agricultural  &  Related Products Total,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,AV,AC,M2,GATS,AI,AG
+8,1,Anguilla,2.3,Barbados,Agricultural  &  Related Products Total,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,AV,BB,M2,GATS,AI,BB
+9,1,Anguilla,2.4,Dominica,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,AV,DO,M2,GATS,AI,DM
+10,1,Anguilla,2.5,Dominican Republic,Agricultural  &  Related Products Total,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,AV,DR,M2,GATS,AI,DO
+11,1,Anguilla,2.6,Jamaica,Agricultural  &  Related Products Total,0,0,0,0,0,0,19,11,0,0,0,0,0,0,0,0,0,0,AV,JM,M2,GATS,AI,JM
+12,1,Anguilla,2.7,Montserrat,Agricultural  &  Related Products Total,0,0,NA,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,AV,MH,M2,GATS,AI,MS
+14,1,Anguilla,2.9,Saint Lucia,Agricultural  &  Related Products Total,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,AV,ST,M2,GATS,AI,LC
+15,1,Anguilla,2.1,Trinidad and Tobago,Agricultural  &  Related Products Total,0,63,0,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,AV,TD,M2,GATS,AI,TT
+16,1,Anguilla,2.11,Saint Vincent and the Grenadines,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,AV,VC,M2,GATS,AI,VC
+17,1,Anguilla,2.12,British Virgin Islands,Agricultural  &  Related Products Total,0,0,0,0,3,0,0,1,11,0,0,0,0,0,0,0,0,0,AV,VI,M2,GATS,AI,VG
+19,1,Anguilla,3.1,Panama,Agricultural  &  Related Products Total,0,0,0,16,0,0,0,4,0,0,0,0,0,0,0,0,0,0,AV,PM,M2,GATS,AI,PA
+21,1,Anguilla,4.1,Guyana,Agricultural  &  Related Products Total,217,26,96,965,203,0,"3,667","3,163","4,390",0,0,0,0,0,0,0,0,0,AV,GY,M2,GATS,AI,GY
+29,1,Anguilla,7,Puerto Rico,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,AI,PR
+30,1,Anguilla,7.1,Dominican Republic,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,AI,DO
+31,1,Anguilla,7.2,Dominica,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,AI,DM
+32,1,Anguilla,7.4,St. Maarten,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,AI,SX
+49,2,Bermuda,5.1,Guatemala,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,BM,GT
+50,2,Bermuda,5.2,Panama,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,BM,PA
+51,2,Bermuda,5.3,Cuba,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,BM,CU
+52,2,Bermuda,5.4,Puerto Rico,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,BM,PR
+58,3,Montserrat,2.1,St. Kitts and Nevis,Agricultural  &  Related Products Total,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,MH,A1,M2,GATS,MS,KN
+59,3,Montserrat,2.2,Antigua and Barbuda,Agricultural  &  Related Products Total,1,4,0,1,0,8,5,3,3,1,0,0,0,2,4,0,0,0,MH,AC,M2,GATS,MS,AG
+60,3,Montserrat,2.3,Anguilla,Agricultural  &  Related Products Total,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,MH,AV,M2,GATS,MS,AI
+61,3,Montserrat,2.4,Barbados,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,MH,BB,M2,GATS,MS,BB
+62,3,Montserrat,2.5,Dominica,Agricultural  &  Related Products Total,0,0,0,0,0,2,0,0,0,1,0,0,0,0,0,0,0,0,MH,DO,M2,GATS,MS,DM
+64,3,Montserrat,2.7,Saint Lucia,Agricultural  &  Related Products Total,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,MH,ST,M2,GATS,MS,LC
+65,3,Montserrat,2.8,Trinidad and Tobago,Agricultural  &  Related Products Total,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,MH,TD,M2,GATS,MS,TT
+66,3,Montserrat,2.9,British Virgin Islands,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,MH,VI,M2,GATS,MS,VG
+72,3,Montserrat,4.1,Togo,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,MH,TO,M2,GATS,MS,TG
+73,3,Montserrat,4.2,Saint Vincent and the Grenadines,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,MS,VC
+74,3,Montserrat,4.3,Guadeloupe,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,MS,GP
+75,3,Montserrat,4.4,St. Maarten,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,MS,SX
+76,3,Montserrat,4.5,Barbados,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,MS,BB
+81,4,Turks and Caicos Islands,2.1,"Bahamas, The",Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TK,BF,M2,GATS,TC,BS
+82,4,Turks and Caicos Islands,2.2,Dominican Republic,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TK,DR,M2,GATS,TC,DO
+83,4,Turks and Caicos Islands,2.3,Haiti,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TK,HA,M2,GATS,TC,HT
+84,4,Turks and Caicos Islands,2.4,Saint Vincent and the Grenadines,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TK,VC,M2,GATS,TC,VC
+90,4,Turks and Caicos Islands,4.2,Antigua and Barbuda,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,TC,AG
+91,4,Turks and Caicos Islands,4.3,Jamaica,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,TC,JM
+95,5,British Virgin Islands,1.3,St. Lucia,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,VG,LC
+96,5,British Virgin Islands,1.4,Dominica,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,VG,DM
+97,5,British Virgin Islands,1.5,Puerto Rico,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,VG,PR
+98,5,British Virgin Islands,1.6,Antigua and Barbuda,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,VG,AG
+99,5,British Virgin Islands,1.7,St. Maarten,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,VG,SX
+100,5,British Virgin Islands,1.8,Dominican Republic,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,VG,DO
+101,5,British Virgin Islands,1.9,St. Kitts and Nevis,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,VG,KN
+103,6,Cayman Islands,1.1,Jamaica,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,KY,JM
+104,6,Cayman Islands,1.2,"Bahamas, The",Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,KY,BS
+105,6,Cayman Islands,1.3,Cuba,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,KY,CU
+106,6,Cayman Islands,1.4,Honduras,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,KY,HN
+107,6,Cayman Islands,1.5,Panama,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,KY,PA
+109,6,Cayman Islands,1.7,Jamaica,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,KY,JM
+110,6,Cayman Islands,1.8,Colombia,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,KY,CO
