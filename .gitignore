@@ -3,4 +3,4 @@ outputs/deprecated
 notes/
 .Rproj.user
 .Rhistory
-.Rproj
+*.Rproj

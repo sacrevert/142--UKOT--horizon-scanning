@@ -1,4 +1,4 @@
-#### Script for retrieving GBIF country-based checklists based on existing records
+#### Function for retrieving GBIF country-based checklists based on existing records
 # 01.04.2018, OL Pescott
 
 ## v0, Script for retrieving lists of taxa per country from GBIF (not as straightforward as you might think!), O.Pescott, 22.03.2018
