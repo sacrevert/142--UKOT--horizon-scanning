@@ -1,5 +1,6 @@
 scripts/deprecated
-notes/notes.md
+outputs/deprecated
+notes
 .Rproj.user
 .Rhistory
 .Rproj
