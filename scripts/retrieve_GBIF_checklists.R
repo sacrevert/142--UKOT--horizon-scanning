@@ -1,23 +1,15 @@
-## v1, investigating paging options for overcoming the speciesKey.facetLimit max value, O.Pescott, 23.03.2018
+#### Script for retrieving GBIF country-based checklists based on existing records
+# 01.04.2018, OL Pescott
+
 ## v0, Script for retrieving lists of taxa per country from GBIF (not as straightforward as you might think!), O.Pescott, 22.03.2018
+## v1, investigating paging options for overcoming the speciesKey.facetLimit max value, O.Pescott, 23.03.2018
+#rm(list = ls())
 
-rm(list = ls())
-library(rgbif)
-#library(taxize)
-library(countrycode)
-
-## take list of countries and download them
-# read in country list for Caribbean island scan
-CNlist <- read.csv(file = "data/CaribbeanOT_links_GATS_and_PA_v0.csv", stringsAsFactors = F)
-# ISO 2 letter code used by rGBIF
-CNlist$reporter2iso <- countrycode(CNlist$reporter, 'country.name', 'iso2c') # check any errors manually
-CNlist$partner2iso <- countrycode(CNlist$partner, 'country.name', 'iso2c') # check any errors manually
-write.csv(CNlist, file = "data/CaribbeanOT_links_GATS_and_PA_withISOs_v1.csv")
-
-# reduced list in order to keep things sensible for the moment
-CNlist2 <- read.csv(file = "data/CaribbeanOT_links_GATS_and_PA_withISOs_v1.csv", stringsAsFactors = F)
-# Watch out, NA = Namibia in country ISO codes
-countries <- unique(c(CNlist2$reporter2iso, CNlist2$partner2iso))
+# Potential improvements:
+# Allow for more arguments to be fed through to rgbif functions
+# Allow for user to limit query to particular taxon groups
+# Overcome harcoded 99,999 hard coded facet limit from rgbif
+# Sys.sleep might stop the function failing to return when processing data for large countries/with lots of info (e.g. Colombia in the current example)
 
 # Retrieve list for one country, and then apply function over country list
 getSppLists <- function (country = country, ...) { # Need to restrict to exclude large countries when retrieving facetted searches from GBIF, because there will be too much information
@@ -48,23 +40,3 @@ getSppLists <- function (country = country, ...) { # Need to restrict to exclude
     }
 } # should probably update to allow selection by phylum, and warnings for hitting the 99999 buffer
 
-## Take list of countries and download...
-ptm <- proc.time()
-allCountries <- list()
-### SLOW (run overnight!) ###
-allCountries <- lapply(countries, function(x) getSppLists(country = x))
-names(allCountries) <- countries # all labels to list elements
-save(allCountries, file = "outputs/allCountries_v4.Rdata")
-time.elapsed <- ptm - proc.time()
-
-# Rerun Columbia, as it failed when in batch
-COdata <- getSppLists(country = c("CO"))
-load(file = "outputs/allCountries_v4.Rdata")
-allCountries$CO <- COdata # add to previously saved list
-head(allCountries$CO)
-# save new version
-save(allCountries, file = "outputs/allCountries_v4.1.Rdata")
-
-# ... and provide list of species present in sources but not in target.
-
-# screen against list of natives/Weber/Randall/other (after parsing those lists against gbif name lookup functions)
