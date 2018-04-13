@@ -34,7 +34,7 @@ row.names(iasDbPl_ALL) <- 1:nrow(iasDbPl_ALL) # there were a couple of entrise i
 
 allCountries <- data.frame(country = unique(iasDbPl_ALL$country))
 allCountries$standardName_1 <- rangeBuilder::standardizeCountry(allCountries$country, fuzzyDist = 10)
-write.csv(allCountries, file = "outputs/makeCountryNameLookup.csv")
+#write.csv(allCountries, file = "outputs/makeCountryNameLookup.csv")
 allcountries_FIN <- read.csv(file = "outputs/CountryNameLookup_FINAL.csv", header = T, stringsAsFactors = F)
 # join back
 iasDbPl_ALL_Std <- merge(iasDbPl_ALL, allcountries_FIN[,c(2:3)], by.x = "country", by.y = "country", all.x = T, all.y = F)
@@ -49,5 +49,11 @@ names(sortCountriesExp)[6] <- "standardName_1"
 # recombine
 iasDbPl_ALL_Std <- rbind(iasDbPl_ALL_Std, sortCountriesExp)
 iasDbPl_ALL_Std <- iasDbPl_ALL_Std[,-c(1)]
-names(sortCountriesExp)[5] <- "country"
+names(iasDbPl_ALL_Std)[5] <- "country"
+iasDbPl_ALL_Std$iso2code <- countrycode::countrycode(iasDbPl_ALL_Std$country, 'country.name', 'iso2c') # not all match
+# fix a few manually
+#Warning message:
+#Some values were not matched unambiguously: ANTILLES, BONAIRE, NETHERLANDS ANTILLES, SAINT MARTIN
+
+
 
