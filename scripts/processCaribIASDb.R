@@ -55,5 +55,18 @@ iasDbPl_ALL_Std$iso2code <- countrycode::countrycode(iasDbPl_ALL_Std$country, 'c
 #Warning message:
 #Some values were not matched unambiguously: ANTILLES, BONAIRE, NETHERLANDS ANTILLES, SAINT MARTIN
 
+# fix
+iasDbPl_ALL_Std$iso2code[iasDbPl_ALL_Std$country=="ANTILLES"] <- "AN"
+iasDbPl_ALL_Std$iso2code[iasDbPl_ALL_Std$country=="NETHERLANDS ANTILLES"] <- "AN"
+iasDbPl_ALL_Std$iso2code[iasDbPl_ALL_Std$country=="BONAIRE"] <- "AN"
+iasDbPl_ALL_Std$iso2code[iasDbPl_ALL_Std$country=="SAINT MARTIN"] <- "MF" # French part
+stillNA <- iasDbPl_ALL_Std[is.na(iasDbPl_ALL_Std$iso2code),] # just empty lines, delete these after a few checks of original PDF
+iasDbPl_ALL_Std <- iasDbPl_ALL_Std[!is.na(iasDbPl_ALL_Std$iso2code),]
+sum(is.na(iasDbPl_ALL_Std$iso2code)) # OK
+# write out
+#write.csv(iasDbPl_ALL_Std, file = "outputs/IASCaribDb_Plants_longform_FINAL.csv") # 3680 rows
+#
+
+
 
 
