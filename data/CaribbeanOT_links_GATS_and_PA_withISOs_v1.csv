@@ -1,111 +1,111 @@
-"","cn_number","reporter","partner_num","partner","product","X2000","X2001","X2002","X2003","X2004","X2005","X2006","X2007","X2008","X2009","X2010","X2011","X2012","X2013","X2014","X2015","X2016","X2017","Reporter.Code","Partner.Code","Product.Code","source","reporter2iso","partner2iso"
-"1",1,"Anguilla",1,"North America","Agricultural  &  Related Products Total",301,83,31,94,169,0,"218","39","104",0,0,0,"0",0,"0","0","0",0,"AV","R05","M2","GATS","AI",NA
-"2",1,"Anguilla",1.1,"Canada","Agricultural  &  Related Products Total",0,0,0,0,10,0,"0","1","0",0,0,0,"0",0,"0","0","0",0,"AV","CA","M2","GATS","AI","CA"
-"3",1,"Anguilla",1.2,"Mexico","Agricultural  &  Related Products Total",0,0,0,0,0,0,"2","0","0",0,0,0,"0",0,"0","0","0",0,"AV","MX","M2","GATS","AI","MX"
-"4",1,"Anguilla",1.3,"United States","Agricultural  &  Related Products Total",301,83,31,94,158,0,"216","38","104",0,0,0,"0",0,"0","0","0",0,"AV","US","M2","GATS","AI","US"
-"5",1,"Anguilla",2,"Caribbean","Agricultural  &  Related Products Total",11,99,6,16,4,0,"5,173","186","17",0,0,0,"0",0,"0","0","0",0,"AV","R10","M2","GATS","AI",NA
-"6",1,"Anguilla",2.1,"St. Kitts and Nevis","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","1",0,0,0,"0",0,"0","0","0",0,"AV","A1","M2","GATS","AI","KN"
-"7",1,"Anguilla",2.2,"Antigua and Barbuda","Agricultural  &  Related Products Total",0,0,5,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"AV","AC","M2","GATS","AI","AG"
-"8",1,"Anguilla",2.3,"Barbados","Agricultural  &  Related Products Total",3,0,0,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"AV","BB","M2","GATS","AI","BB"
-"9",1,"Anguilla",2.4,"Dominica","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"AV","DO","M2","GATS","AI","DM"
-"10",1,"Anguilla",2.5,"Dominican Republic","Agricultural  &  Related Products Total",2,0,0,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"AV","DR","M2","GATS","AI","DO"
-"11",1,"Anguilla",2.6,"Jamaica","Agricultural  &  Related Products Total",0,0,0,0,0,0,"19","11","0",0,0,0,"0",0,"0","0","0",0,"AV","JM","M2","GATS","AI","JM"
-"12",1,"Anguilla",2.7,"Montserrat","Agricultural  &  Related Products Total",0,0,NA,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"AV","MH","M2","GATS","AI","MS"
-"13",1,"Anguilla",2.8,"Netherlands Antilles","Agricultural  &  Related Products Total",5,34,0,1,1,0,"5,154","173","5",0,0,0,"0",0,"0","0","0",0,"AV","NT","M2","GATS","AI",NA
-"14",1,"Anguilla",2.9,"Saint Lucia","Agricultural  &  Related Products Total",0,2,0,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"AV","ST","M2","GATS","AI","LC"
-"15",1,"Anguilla",2.1,"Trinidad and Tobago","Agricultural  &  Related Products Total",0,63,0,15,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"AV","TD","M2","GATS","AI","TT"
-"16",1,"Anguilla",2.11,"Saint Vincent and the Grenadines","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"AV","VC","M2","GATS","AI","VC"
-"17",1,"Anguilla",2.12,"British Virgin Islands","Agricultural  &  Related Products Total",0,0,0,0,3,0,"0","1","11",0,0,0,"0",0,"0","0","0",0,"AV","VI","M2","GATS","AI","VG"
-"18",1,"Anguilla",3,"Central America","Agricultural  &  Related Products Total",0,0,0,16,0,0,"0","4","0",0,0,0,"0",0,"0","0","0",0,"AV","R15","M2","GATS","AI",NA
-"19",1,"Anguilla",3.1,"Panama","Agricultural  &  Related Products Total",0,0,0,16,0,0,"0","4","0",0,0,0,"0",0,"0","0","0",0,"AV","PM","M2","GATS","AI","PA"
-"20",1,"Anguilla",4,"South America","Agricultural  &  Related Products Total",217,26,96,965,203,0,"3,667","3,163","4,390",0,0,0,"0",0,"0","0","0",0,"AV","R20","M2","GATS","AI",NA
-"21",1,"Anguilla",4.1,"Guyana","Agricultural  &  Related Products Total",217,26,96,965,203,0,"3,667","3,163","4,390",0,0,0,"0",0,"0","0","0",0,"AV","GY","M2","GATS","AI","GY"
-"22",1,"Anguilla",5,"European Union-28","Agricultural  &  Related Products Total",1,1,3,24,0,0,"753","949","255",0,0,0,"0",0,"0","0","0",0,"AV","R25","M2","GATS","AI",NA
-"23",1,"Anguilla",5.1,"Ireland","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","14","4",0,0,0,"0",0,"0","0","0",0,"AV","EI","M2","GATS","AI","IE"
-"24",1,"Anguilla",5.2,"France","Agricultural  &  Related Products Total",1,1,0,5,0,0,"2","0","0",0,0,0,"0",0,"0","0","0",0,"AV","F1","M2","GATS","AI","FR"
-"25",1,"Anguilla",5.3,"Netherlands","Agricultural  &  Related Products Total",0,0,0,16,0,0,"0","88","43",0,0,0,"0",0,"0","0","0",0,"AV","NL","M2","GATS","AI","NL"
-"26",1,"Anguilla",5.4,"United Kingdom","Agricultural  &  Related Products Total",0,0,3,4,0,0,"751","847","208",0,0,0,"0",0,"0","0","0",0,"AV","UK","M2","GATS","AI","GB"
-"27",1,"Anguilla",6,"Oceania","Agricultural  &  Related Products Total",112,0,4,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"AV","R70","M2","GATS","AI",NA
-"28",1,"Anguilla",6.1,"Australia","Agricultural  &  Related Products Total",112,0,4,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"AV","AS","M2","GATS","AI","AU"
-"29",1,"Anguilla",7,"Puerto Rico","Air",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","AI","PR"
-"30",1,"Anguilla",7.1,"Dominican Republic","Air",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","AI","DO"
-"31",1,"Anguilla",7.2,"Dominica","Air",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","AI","DM"
-"32",1,"Anguilla",7.4,"St. Maarten","Sea",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","AI","SX"
-"33",1,"Anguilla",7.3,"Japan","Sea",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","AI","JP"
-"34",1,"Anguilla",7.4,"USVI","Sea",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","AI",NA
-"35",2,"Bermuda",1,"North America","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"166",369,"2,697","3,666","5,174",0,"BD","R05","M2","GATS","BM",NA
-"36",2,"Bermuda",1.1,"Canada","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"0",0,"60","102","120",0,"BD","CA","M2","GATS","BM","CA"
-"37",2,"Bermuda",1.2,"United States","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"166",369,"2,637","3,564","5,053",0,"BD","US","M2","GATS","BM","US"
-"38",2,"Bermuda",2,"European Union-28","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"14",46,"66","95","145",0,"BD","R25","M2","GATS","BM",NA
-"39",2,"Bermuda",2.1,"Belgium","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"0",1,"2","0","1",0,"BD","B1","M2","GATS","BM","BE"
-"40",2,"Bermuda",2.2,"Italy","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"3",6,"4","0","0",0,"BD","IT","M2","GATS","BM","IT"
-"41",2,"Bermuda",2.3,"Netherlands","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"4",0,"0","0","0",0,"BD","NL","M2","GATS","BM","NL"
-"42",2,"Bermuda",2.4,"Spain","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"0",0,"0","1","0",0,"BD","SP","M2","GATS","BM","ES"
-"43",2,"Bermuda",2.5,"United Kingdom","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"7",39,"59","93","143",0,"BD","UK","M2","GATS","BM","GB"
-"44",2,"Bermuda",3,"East Asia","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"BD","R40","M2","GATS","BM",NA
-"45",2,"Bermuda",3.1,"China","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"BD","CH","M2","GATS","BM","CN"
-"46",2,"Bermuda",4,"Miscellaneous Designated Areas","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"1,858",0,"0","0","0",0,"BD","R99","M2","GATS","BM",NA
-"47",2,"Bermuda",4.1,"Areas, not elsewhere specified","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"1,858",0,"0","0","0",0,"BD","15","M2","GATS","BM",NA
-"48",2,"Bermuda",5,"Azores","Sea",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","BM",NA
-"49",2,"Bermuda",5.1,"Guatemala","Sea",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","BM","GT"
-"50",2,"Bermuda",5.2,"Panama","Sea",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","BM","PA"
-"51",2,"Bermuda",5.3,"Cuba","Sea",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","BM","CU"
-"52",2,"Bermuda",5.4,"Puerto Rico","Sea",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","BM","PR"
-"53",2,"Bermuda",5.5,"USVI","Sea",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","BM",NA
-"54",2,"Bermuda",5.6,"Dubai","Air",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","BM",NA
-"55",3,"Montserrat",1,"North America","Agricultural  &  Related Products Total",0,0,1,0,0,0,"0","0","0",0,1,0,"0",0,"1","0","0",0,"MH","R05","M2","GATS","MS",NA
-"56",3,"Montserrat",1.1,"United States","Agricultural  &  Related Products Total",0,0,1,0,0,0,"0","0","0",0,1,0,"0",0,"1","0","0",0,"MH","US","M2","GATS","MS","US"
-"57",3,"Montserrat",2,"Caribbean","Agricultural  &  Related Products Total",7,6,0,6,1,10,"7","5","5",3,0,0,"0",2,"4","0","0",0,"MH","R10","M2","GATS","MS",NA
-"58",3,"Montserrat",2.1,"St. Kitts and Nevis","Agricultural  &  Related Products Total",2,0,0,1,0,0,"0","1","0",0,0,0,"0",0,"0","0","0",0,"MH","A1","M2","GATS","MS","KN"
-"59",3,"Montserrat",2.2,"Antigua and Barbuda","Agricultural  &  Related Products Total",1,4,0,1,0,8,"5","3","3",1,0,0,"0",2,"4","0","0",0,"MH","AC","M2","GATS","MS","AG"
-"60",3,"Montserrat",2.3,"Anguilla","Agricultural  &  Related Products Total",0,0,0,4,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"MH","AV","M2","GATS","MS","AI"
-"61",3,"Montserrat",2.4,"Barbados","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","1",0,0,0,"0",0,"0","0","0",0,"MH","BB","M2","GATS","MS","BB"
-"62",3,"Montserrat",2.5,"Dominica","Agricultural  &  Related Products Total",0,0,0,0,0,2,"0","0","0",1,0,0,"0",0,"0","0","0",0,"MH","DO","M2","GATS","MS","DM"
-"63",3,"Montserrat",2.6,"Netherlands Antilles","Agricultural  &  Related Products Total",1,0,0,0,1,0,"1","0","0",0,0,0,"0",0,"0","0","0",0,"MH","NT","M2","GATS","MS",NA
-"64",3,"Montserrat",2.7,"Saint Lucia","Agricultural  &  Related Products Total",3,0,0,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"MH","ST","M2","GATS","MS","LC"
-"65",3,"Montserrat",2.8,"Trinidad and Tobago","Agricultural  &  Related Products Total",0,2,0,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"MH","TD","M2","GATS","MS","TT"
-"66",3,"Montserrat",2.9,"British Virgin Islands","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"MH","VI","M2","GATS","MS","VG"
-"67",3,"Montserrat",3,"European Union-28","Agricultural  &  Related Products Total",0,0,0,0,9,0,"0","0","0",0,0,0,"0",0,"1","0","0",0,"MH","R25","M2","GATS","MS",NA
-"68",3,"Montserrat",3.1,"France","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"0",0,"1","0","0",0,"MH","F1","M2","GATS","MS","FR"
-"69",3,"Montserrat",3.2,"Netherlands","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"MH","NL","M2","GATS","MS","NL"
-"70",3,"Montserrat",3.3,"United Kingdom","Agricultural  &  Related Products Total",0,0,0,0,9,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"MH","UK","M2","GATS","MS","GB"
-"71",3,"Montserrat",4,"Sub-Saharan Africa","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"0",0,"2","0","0",0,"MH","R55","M2","GATS","MS",NA
-"72",3,"Montserrat",4.1,"Togo","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"0",0,"2","0","0",0,"MH","TO","M2","GATS","MS","TG"
-"73",3,"Montserrat",4.2,"Saint Vincent and the Grenadines","Air",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","MS","VC"
-"74",3,"Montserrat",4.3,"Guadeloupe","Air",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","MS","GP"
-"75",3,"Montserrat",4.4,"St. Maarten","Air",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","MS","SX"
-"76",3,"Montserrat",4.5,"Barbados","Air",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","MS","BB"
-"77",4,"Turks and Caicos Islands",1,"North America","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,554,"1,313",0,"0","0","0",0,"TK","R05","M2","GATS","TC",NA
-"78",4,"Turks and Caicos Islands",1.1,"Canada","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"TK","CA","M2","GATS","TC","CA"
-"79",4,"Turks and Caicos Islands",1.2,"United States","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,554,"1,313",0,"0","0","0",0,"TK","US","M2","GATS","TC","US"
-"80",4,"Turks and Caicos Islands",2,"Caribbean","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"TK","R10","M2","GATS","TC",NA
-"81",4,"Turks and Caicos Islands",2.1,"Bahamas, The","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"TK","BF","M2","GATS","TC","BS"
-"82",4,"Turks and Caicos Islands",2.2,"Dominican Republic","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"TK","DR","M2","GATS","TC","DO"
-"83",4,"Turks and Caicos Islands",2.3,"Haiti","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"TK","HA","M2","GATS","TC","HT"
-"84",4,"Turks and Caicos Islands",2.4,"Saint Vincent and the Grenadines","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"TK","VC","M2","GATS","TC","VC"
-"85",4,"Turks and Caicos Islands",3,"European Union-28","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"TK","R25","M2","GATS","TC",NA
-"86",4,"Turks and Caicos Islands",3.1,"Netherlands","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"TK","NL","M2","GATS","TC","NL"
-"87",4,"Turks and Caicos Islands",3.2,"United Kingdom","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,0,"0",0,"0","0","0",0,"TK","UK","M2","GATS","TC","GB"
-"88",4,"Turks and Caicos Islands",4,"Miscellaneous Designated Areas","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,737,"604",0,"0","0","0",0,"TK","R99","M2","GATS","TC",NA
-"89",4,"Turks and Caicos Islands",4.1,"Areas, not elsewhere specified","Agricultural  &  Related Products Total",0,0,0,0,0,0,"0","0","0",0,0,737,"604",0,"0","0","0",0,"TK","15","M2","GATS","TC",NA
-"90",4,"Turks and Caicos Islands",4.2,"Antigua and Barbuda","Air",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","TC","AG"
-"91",4,"Turks and Caicos Islands",4.3,"Jamaica","Air",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","TC","JM"
-"92",5,"British Virgin Islands",1,"Caribbean","Air",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","VG",NA
-"93",5,"British Virgin Islands",1.1,"Caribbean","Sea",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","VG",NA
-"94",5,"British Virgin Islands",1.2,"United States","Air",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","VG","US"
-"95",5,"British Virgin Islands",1.3,"St. Lucia","Sea",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","VG","LC"
-"96",5,"British Virgin Islands",1.4,"Dominica","Sea",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","VG","DM"
-"97",5,"British Virgin Islands",1.5,"Puerto Rico","Sea",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","VG","PR"
-"98",5,"British Virgin Islands",1.6,"Antigua and Barbuda","Sea",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","VG","AG"
-"99",5,"British Virgin Islands",1.7,"St. Maarten","Sea",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","VG","SX"
-"100",5,"British Virgin Islands",1.8,"Dominican Republic","Sea",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","VG","DO"
-"101",5,"British Virgin Islands",1.9,"St. Kitts and Nevis","Sea",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","VG","KN"
-"102",6,"Cayman Islands",1,"United States","Air",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","KY","US"
-"103",6,"Cayman Islands",1.1,"Jamaica","Air",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","KY","JM"
-"104",6,"Cayman Islands",1.2,"Bahamas, The","Air",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","KY","BS"
-"105",6,"Cayman Islands",1.3,"Cuba","Air",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","KY","CU"
-"106",6,"Cayman Islands",1.4,"Honduras","Air",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","KY","HN"
-"107",6,"Cayman Islands",1.5,"Panama","Air",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","KY","PA"
-"108",6,"Cayman Islands",1.6,"Mexico","Sea",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","KY","MX"
-"109",6,"Cayman Islands",1.7,"Jamaica","Sea",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","KY","JM"
-"110",6,"Cayman Islands",1.8,"Colombia","Sea",NA,NA,NA,NA,NA,NA,"","","",NA,NA,NA,"",NA,"","","",NA,"","","","PA","KY","CO"
+,cn_number,reporter,partner_num,partner,product,X2000,X2001,X2002,X2003,X2004,X2005,X2006,X2007,X2008,X2009,X2010,X2011,X2012,X2013,X2014,X2015,X2016,X2017,Reporter.Code,Partner.Code,Product.Code,source,reporter2iso,partner2iso
+1,1,Anguilla,1,North America,Agricultural  &  Related Products Total,301,83,31,94,169,0,218,39,104,0,0,0,0,0,0,0,0,0,AV,R05,M2,GATS,AI,NA
+2,1,Anguilla,1.1,Canada,Agricultural  &  Related Products Total,0,0,0,0,10,0,0,1,0,0,0,0,0,0,0,0,0,0,AV,CA,M2,GATS,AI,CA
+3,1,Anguilla,1.2,Mexico,Agricultural  &  Related Products Total,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,AV,MX,M2,GATS,AI,MX
+4,1,Anguilla,1.3,United States,Agricultural  &  Related Products Total,301,83,31,94,158,0,216,38,104,0,0,0,0,0,0,0,0,0,AV,US,M2,GATS,AI,US
+5,1,Anguilla,2,Caribbean,Agricultural  &  Related Products Total,11,99,6,16,4,0,"5,173",186,17,0,0,0,0,0,0,0,0,0,AV,R10,M2,GATS,AI,NA
+6,1,Anguilla,2.1,St. Kitts and Nevis,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,AV,A1,M2,GATS,AI,KN
+7,1,Anguilla,2.2,Antigua and Barbuda,Agricultural  &  Related Products Total,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,AV,AC,M2,GATS,AI,AG
+8,1,Anguilla,2.3,Barbados,Agricultural  &  Related Products Total,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,AV,BB,M2,GATS,AI,BB
+9,1,Anguilla,2.4,Dominica,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,AV,DO,M2,GATS,AI,DM
+10,1,Anguilla,2.5,Dominican Republic,Agricultural  &  Related Products Total,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,AV,DR,M2,GATS,AI,DO
+11,1,Anguilla,2.6,Jamaica,Agricultural  &  Related Products Total,0,0,0,0,0,0,19,11,0,0,0,0,0,0,0,0,0,0,AV,JM,M2,GATS,AI,JM
+12,1,Anguilla,2.7,Montserrat,Agricultural  &  Related Products Total,0,0,NA,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,AV,MH,M2,GATS,AI,MS
+13,1,Anguilla,2.8,Netherlands Antilles,Agricultural  &  Related Products Total,5,34,0,1,1,0,"5,154",173,5,0,0,0,0,0,0,0,0,0,AV,NT,M2,GATS,AI,AN
+14,1,Anguilla,2.9,Saint Lucia,Agricultural  &  Related Products Total,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,AV,ST,M2,GATS,AI,LC
+15,1,Anguilla,2.1,Trinidad and Tobago,Agricultural  &  Related Products Total,0,63,0,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,AV,TD,M2,GATS,AI,TT
+16,1,Anguilla,2.11,Saint Vincent and the Grenadines,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,AV,VC,M2,GATS,AI,VC
+17,1,Anguilla,2.12,British Virgin Islands,Agricultural  &  Related Products Total,0,0,0,0,3,0,0,1,11,0,0,0,0,0,0,0,0,0,AV,VI,M2,GATS,AI,VG
+18,1,Anguilla,3,Central America,Agricultural  &  Related Products Total,0,0,0,16,0,0,0,4,0,0,0,0,0,0,0,0,0,0,AV,R15,M2,GATS,AI,NA
+19,1,Anguilla,3.1,Panama,Agricultural  &  Related Products Total,0,0,0,16,0,0,0,4,0,0,0,0,0,0,0,0,0,0,AV,PM,M2,GATS,AI,PA
+20,1,Anguilla,4,South America,Agricultural  &  Related Products Total,217,26,96,965,203,0,"3,667","3,163","4,390",0,0,0,0,0,0,0,0,0,AV,R20,M2,GATS,AI,NA
+21,1,Anguilla,4.1,Guyana,Agricultural  &  Related Products Total,217,26,96,965,203,0,"3,667","3,163","4,390",0,0,0,0,0,0,0,0,0,AV,GY,M2,GATS,AI,GY
+22,1,Anguilla,5,European Union-28,Agricultural  &  Related Products Total,1,1,3,24,0,0,753,949,255,0,0,0,0,0,0,0,0,0,AV,R25,M2,GATS,AI,NA
+23,1,Anguilla,5.1,Ireland,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,14,4,0,0,0,0,0,0,0,0,0,AV,EI,M2,GATS,AI,IE
+24,1,Anguilla,5.2,France,Agricultural  &  Related Products Total,1,1,0,5,0,0,2,0,0,0,0,0,0,0,0,0,0,0,AV,F1,M2,GATS,AI,FR
+25,1,Anguilla,5.3,Netherlands,Agricultural  &  Related Products Total,0,0,0,16,0,0,0,88,43,0,0,0,0,0,0,0,0,0,AV,NL,M2,GATS,AI,NL
+26,1,Anguilla,5.4,United Kingdom,Agricultural  &  Related Products Total,0,0,3,4,0,0,751,847,208,0,0,0,0,0,0,0,0,0,AV,UK,M2,GATS,AI,GB
+27,1,Anguilla,6,Oceania,Agricultural  &  Related Products Total,112,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,AV,R70,M2,GATS,AI,NA
+28,1,Anguilla,6.1,Australia,Agricultural  &  Related Products Total,112,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,AV,AS,M2,GATS,AI,AU
+29,1,Anguilla,7,Puerto Rico,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,AI,PR
+30,1,Anguilla,7.1,Dominican Republic,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,AI,DO
+31,1,Anguilla,7.2,Dominica,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,AI,DM
+32,1,Anguilla,7.4,St. Maarten,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,AI,SX
+33,1,Anguilla,7.3,Japan,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,AI,JP
+34,1,Anguilla,7.4,USVI,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,AI,VI
+35,2,Bermuda,1,North America,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,166,369,"2,697","3,666","5,174",0,BD,R05,M2,GATS,BM,NA
+36,2,Bermuda,1.1,Canada,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,60,102,120,0,BD,CA,M2,GATS,BM,CA
+37,2,Bermuda,1.2,United States,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,166,369,"2,637","3,564","5,053",0,BD,US,M2,GATS,BM,US
+38,2,Bermuda,2,European Union-28,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,14,46,66,95,145,0,BD,R25,M2,GATS,BM,NA
+39,2,Bermuda,2.1,Belgium,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,0,1,0,BD,B1,M2,GATS,BM,BE
+40,2,Bermuda,2.2,Italy,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,3,6,4,0,0,0,BD,IT,M2,GATS,BM,IT
+41,2,Bermuda,2.3,Netherlands,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,BD,NL,M2,GATS,BM,NL
+42,2,Bermuda,2.4,Spain,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,BD,SP,M2,GATS,BM,ES
+43,2,Bermuda,2.5,United Kingdom,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,7,39,59,93,143,0,BD,UK,M2,GATS,BM,GB
+44,2,Bermuda,3,East Asia,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,BD,R40,M2,GATS,BM,NA
+45,2,Bermuda,3.1,China,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,BD,CH,M2,GATS,BM,CN
+46,2,Bermuda,4,Miscellaneous Designated Areas,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,"1,858",0,0,0,0,0,BD,R99,M2,GATS,BM,NA
+47,2,Bermuda,4.1,"Areas, not elsewhere specified",Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,"1,858",0,0,0,0,0,BD,15,M2,GATS,BM,NA
+48,2,Bermuda,5,Azores,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,BM,NA
+49,2,Bermuda,5.1,Guatemala,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,BM,GT
+50,2,Bermuda,5.2,Panama,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,BM,PA
+51,2,Bermuda,5.3,Cuba,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,BM,CU
+52,2,Bermuda,5.4,Puerto Rico,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,BM,PR
+53,2,Bermuda,5.5,USVI,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,BM,VI
+54,2,Bermuda,5.6,Dubai,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,BM,NA
+55,3,Montserrat,1,North America,Agricultural  &  Related Products Total,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,MH,R05,M2,GATS,MS,NA
+56,3,Montserrat,1.1,United States,Agricultural  &  Related Products Total,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,MH,US,M2,GATS,MS,US
+57,3,Montserrat,2,Caribbean,Agricultural  &  Related Products Total,7,6,0,6,1,10,7,5,5,3,0,0,0,2,4,0,0,0,MH,R10,M2,GATS,MS,NA
+58,3,Montserrat,2.1,St. Kitts and Nevis,Agricultural  &  Related Products Total,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,MH,A1,M2,GATS,MS,KN
+59,3,Montserrat,2.2,Antigua and Barbuda,Agricultural  &  Related Products Total,1,4,0,1,0,8,5,3,3,1,0,0,0,2,4,0,0,0,MH,AC,M2,GATS,MS,AG
+60,3,Montserrat,2.3,Anguilla,Agricultural  &  Related Products Total,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,MH,AV,M2,GATS,MS,AI
+61,3,Montserrat,2.4,Barbados,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,MH,BB,M2,GATS,MS,BB
+62,3,Montserrat,2.5,Dominica,Agricultural  &  Related Products Total,0,0,0,0,0,2,0,0,0,1,0,0,0,0,0,0,0,0,MH,DO,M2,GATS,MS,DM
+63,3,Montserrat,2.6,Netherlands Antilles,Agricultural  &  Related Products Total,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,MH,NT,M2,GATS,MS,AN
+64,3,Montserrat,2.7,Saint Lucia,Agricultural  &  Related Products Total,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,MH,ST,M2,GATS,MS,LC
+65,3,Montserrat,2.8,Trinidad and Tobago,Agricultural  &  Related Products Total,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,MH,TD,M2,GATS,MS,TT
+66,3,Montserrat,2.9,British Virgin Islands,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,MH,VI,M2,GATS,MS,VG
+67,3,Montserrat,3,European Union-28,Agricultural  &  Related Products Total,0,0,0,0,9,0,0,0,0,0,0,0,0,0,1,0,0,0,MH,R25,M2,GATS,MS,NA
+68,3,Montserrat,3.1,France,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,MH,F1,M2,GATS,MS,FR
+69,3,Montserrat,3.2,Netherlands,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,MH,NL,M2,GATS,MS,NL
+70,3,Montserrat,3.3,United Kingdom,Agricultural  &  Related Products Total,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,MH,UK,M2,GATS,MS,GB
+71,3,Montserrat,4,Sub-Saharan Africa,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,MH,R55,M2,GATS,MS,NA
+72,3,Montserrat,4.1,Togo,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,MH,TO,M2,GATS,MS,TG
+73,3,Montserrat,4.2,Saint Vincent and the Grenadines,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,MS,VC
+74,3,Montserrat,4.3,Guadeloupe,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,MS,GP
+75,3,Montserrat,4.4,St. Maarten,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,MS,SX
+76,3,Montserrat,4.5,Barbados,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,MS,BB
+77,4,Turks and Caicos Islands,1,North America,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,554,"1,313",0,0,0,0,0,TK,R05,M2,GATS,TC,NA
+78,4,Turks and Caicos Islands,1.1,Canada,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TK,CA,M2,GATS,TC,CA
+79,4,Turks and Caicos Islands,1.2,United States,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,554,"1,313",0,0,0,0,0,TK,US,M2,GATS,TC,US
+80,4,Turks and Caicos Islands,2,Caribbean,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TK,R10,M2,GATS,TC,NA
+81,4,Turks and Caicos Islands,2.1,"Bahamas, The",Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TK,BF,M2,GATS,TC,BS
+82,4,Turks and Caicos Islands,2.2,Dominican Republic,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TK,DR,M2,GATS,TC,DO
+83,4,Turks and Caicos Islands,2.3,Haiti,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TK,HA,M2,GATS,TC,HT
+84,4,Turks and Caicos Islands,2.4,Saint Vincent and the Grenadines,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TK,VC,M2,GATS,TC,VC
+85,4,Turks and Caicos Islands,3,European Union-28,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TK,R25,M2,GATS,TC,NA
+86,4,Turks and Caicos Islands,3.1,Netherlands,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TK,NL,M2,GATS,TC,NL
+87,4,Turks and Caicos Islands,3.2,United Kingdom,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TK,UK,M2,GATS,TC,GB
+88,4,Turks and Caicos Islands,4,Miscellaneous Designated Areas,Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,737,604,0,0,0,0,0,TK,R99,M2,GATS,TC,NA
+89,4,Turks and Caicos Islands,4.1,"Areas, not elsewhere specified",Agricultural  &  Related Products Total,0,0,0,0,0,0,0,0,0,0,0,737,604,0,0,0,0,0,TK,15,M2,GATS,TC,NA
+90,4,Turks and Caicos Islands,4.2,Antigua and Barbuda,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,TC,AG
+91,4,Turks and Caicos Islands,4.3,Jamaica,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,TC,JM
+92,5,British Virgin Islands,1,Caribbean,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,VG,NA
+93,5,British Virgin Islands,1.1,Caribbean,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,VG,NA
+94,5,British Virgin Islands,1.2,United States,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,VG,US
+95,5,British Virgin Islands,1.3,St. Lucia,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,VG,LC
+96,5,British Virgin Islands,1.4,Dominica,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,VG,DM
+97,5,British Virgin Islands,1.5,Puerto Rico,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,VG,PR
+98,5,British Virgin Islands,1.6,Antigua and Barbuda,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,VG,AG
+99,5,British Virgin Islands,1.7,St. Maarten,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,VG,SX
+100,5,British Virgin Islands,1.8,Dominican Republic,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,VG,DO
+101,5,British Virgin Islands,1.9,St. Kitts and Nevis,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,VG,KN
+102,6,Cayman Islands,1,United States,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,KY,US
+103,6,Cayman Islands,1.1,Jamaica,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,KY,JM
+104,6,Cayman Islands,1.2,"Bahamas, The",Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,KY,BS
+105,6,Cayman Islands,1.3,Cuba,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,KY,CU
+106,6,Cayman Islands,1.4,Honduras,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,KY,HN
+107,6,Cayman Islands,1.5,Panama,Air,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,KY,PA
+108,6,Cayman Islands,1.6,Mexico,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,KY,MX
+109,6,Cayman Islands,1.7,Jamaica,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,KY,JM
+110,6,Cayman Islands,1.8,Colombia,Sea,NA,NA,NA,NA,NA,NA,,,,NA,NA,NA,,NA,,,,NA,,,,PA,KY,CO
