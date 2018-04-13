@@ -67,6 +67,5 @@ sum(is.na(iasDbPl_ALL_Std$iso2code)) # OK
 #write.csv(iasDbPl_ALL_Std, file = "outputs/IASCaribDb_Plants_longform_FINAL.csv") # 3680 rows
 #
 
-
-
+# Create lists of species 'not in this country but in those' using a separate script: compare_islandsCaribIASDb.R
 
