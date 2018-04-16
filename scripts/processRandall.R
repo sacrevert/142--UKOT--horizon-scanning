@@ -22,14 +22,18 @@ GBIF_id <- taxize::get_gbifid(full_info$acceptedname, rows = 1, phylum = "Trache
 # save workspace (10 04 2018, v0)
 
 # explore synonymy (CoL only)
-taxa_syns_COL <- taxize::synonyms(x = full_info$acceptedname, db = "col") # should use authority here really
+#taxa_syns_COL <- taxize::synonyms(x = full_info$acceptedname, db = "col") # should use authority here really
 
+# combine GBIF id with full_info
+full_info$GBIF_id <- GBIF_id
+full_info_UNI <- unique(full_info[,c(2:3,5:8)])
+full_info_UNI <- full_info_UNI[order(full_info_UNI$acceptedname),]
+row.names(full_info_UNI) <- 1:nrow(full_info_UNI)
+# only keep matched names
+full_info_UNI <- full_info_UNI[!is.na(full_info_UNI$GBIF_id),]
+full_info_UNI <- full_info_UNI[,c(3,4,2,5:6)] # drop first column and reorder slightly
 
+# write fully matched Randall data out
+#write.csv(full_info_UNI, file = "outputs/randallCleanMatch.csv", row.names = F)
 
-# remplace comma with space using grep
-
-# match to CoL
-
-# then do work on IAS Caribbean database
-
-
+### END
