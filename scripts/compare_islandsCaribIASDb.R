@@ -1,6 +1,7 @@
 ## Script for comparing island level information with the processed Caribbean IAS database
 # 13/04/2018, OL Pescott
 #rm(list=ls())
+library(reshape2)
 
 # previously processed IAS Db for Caribbean (see processCaribIASDb.R)
 iasDbPl_ALL_Std <- read.csv(file = "outputs/IASCaribDb_Plants_longform_FINAL.csv", header = T, stringsAsFactors = F)[,c(2:7)] # avoid uncessary 1st column of row numbers
@@ -43,6 +44,21 @@ HSlists <- lapply(unique(CNlist2_noNAs$reporter2iso), function(x) getThreats(cou
 names(HSlists) <- unique(CNlist2_noNAs$reporter2iso) # name list items
 # flatten list for writing out
 HSlists_df <- do.call(rbind, HSlists)
-write.csv(HSlists_df, file = "outputs/HSlists_fromCaribIASDb.csv")
+#write.csv(HSlists_df, file = "outputs/HSlists_fromCaribIASDb.csv", row.names = FALSE)
 
 ## Also create lists in the per species format required for the HS template (species, island1 (present Y/N), island2 (present Y/N) etc.)
+# invasives only
+iasDbPl_ALL_invs <- iasDbPl_ALL_Std[iasDbPl_ALL_Std$status=="invasive",]
+# only include species that were listed as HS threats based on pathway info
+iasDbPl_ALL_invs <- iasDbPl_ALL_invs[iasDbPl_ALL_invs$Species.Name %in% HSlists_df$species,]
+iasDbPl_ALL_invs <- unique(iasDbPl_ALL_invs)
+iasDbPl_ALL_invsWide <- dcast(iasDbPl_ALL_invs, Species.Name ~ iso2code) # isocode is standardised across country name formats (unlike long forms)
+# filter to countries of interest
+iasDbPl_ALL_invsWide <- cbind(iasDbPl_ALL_invsWide[,c(1)], iasDbPl_ALL_invsWide[,colnames(iasDbPl_ALL_invsWide) %in% CNlist2_noNAs$reporter2iso])
+head(iasDbPl_ALL_invsWide)
+names(iasDbPl_ALL_invsWide)[1] <- "species"
+# delete any rows at genus level
+iasDbPl_ALL_invsWide <- iasDbPl_ALL_invsWide[!grepl("spp", iasDbPl_ALL_invsWide$species),]
+#write.csv(iasDbPl_ALL_invsWide, file = "outputs/HSlists_fromCaribIASDb_WIDEform.csv", row.names = FALSE)
+
+### END
