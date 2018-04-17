@@ -8,7 +8,7 @@ The work on producing an initial "long-list" of candidate invaders per Caribbean
 4. And, finally, bringing all of this together to produce lists of IAS and weeds that have been recorded in some of the pathway countries, but not in the UKOTs. This was done across all six UKOT territories, so that species that have already been recorded in some UKOTs, but may not have been in others, are still included.
 
 Main outputs (17/04/2018): 
-`outputs\allDat.csv` # species by country (by method) checklist
-`outputs\HSlists_fromCaribIASDb_WIDEform` # for each country, a list of IAS that have been recorded in a linked pathway country but not in the country itself (according to the source -- here, the Caribbean IAS Db)
-`outputs\HSlists_fromGbif_WIDEform` # for each country, a list of IAS that have been recorded in a linked pathway country but not in the country itself (according to the source -- here, GBIF [as of April 2018])
+`outputs\allDat.csv # species by country (by method) checklist`
+`outputs\HSlists_fromCaribIASDb_WIDEform # for each country, a list of IAS that have been recorded in a linked pathway country but not in the country itself (according to the source -- here, the Caribbean IAS Db)`
+`outputs\HSlists_fromGbif_WIDEform # for each country, a list of IAS that have been recorded in a linked pathway country but not in the country itself (according to the source -- here, GBIF [as of April 2018])`
 
