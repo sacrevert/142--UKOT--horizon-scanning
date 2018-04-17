@@ -9,6 +9,8 @@ The work on producing an initial "long-list" of candidate invaders per Caribbean
 
 Main outputs (17/04/2018): 
 `outputs\allDat.csv # species by country (by method) checklist`
-`outputs\HSlists_fromCaribIASDb_WIDEform # for each country, a list of IAS that have been recorded in a linked pathway country but not in the country itself (according to the source -- here, the Caribbean IAS Db)`
-`outputs\HSlists_fromGbif_WIDEform # for each country, a list of IAS that have been recorded in a linked pathway country but not in the country itself (according to the source -- here, GBIF [as of April 2018])`
+
+`outputs\HSlists_fromCaribIASDb.csv # for each country, a list of IAS that have been recorded in a linked pathway country but not in the country itself (according to the source -- here, the Caribbean IAS Db)`
+
+`outputs\HSlists_fromGbifAndRandall_incCaribDb.csv # for each country, a list of IAS that have been recorded in a linked pathway country but not in the country itself (according to the source -- here, GBIF [as of April 2018])`
 
