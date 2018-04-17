@@ -59,6 +59,15 @@ head(iasDbPl_ALL_invsWide)
 names(iasDbPl_ALL_invsWide)[1] <- "species"
 # delete any rows at genus level
 iasDbPl_ALL_invsWide <- iasDbPl_ALL_invsWide[!grepl("spp", iasDbPl_ALL_invsWide$species),]
+# note that there are no records of these species for Turks and Caicos
+head(iasDbPl_ALL_invs[iasDbPl_ALL_invs$iso2code=="TC",])
+head(iasDbPl_ALL_invsWide) # so no TC column
+# add TC column for compatiblity with Gbif outputs
+iasDbPl_ALL_invsWide$TC <- 0
+iasDbPl_ALL_invsWide <- iasDbPl_ALL_invsWide[,c(1:5,7,6)]
+
 #write.csv(iasDbPl_ALL_invsWide, file = "outputs/HSlists_fromCaribIASDb_WIDEform.csv", row.names = FALSE)
+# read back in if needed
+#iasDbPl_ALL_invsWide <- read.csv(file = "outputs/HSlists_fromCaribIASDb_WIDEform.csv", header = T, stringsAsFactors = F)
 
 ### END

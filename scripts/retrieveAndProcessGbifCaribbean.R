@@ -3,6 +3,7 @@
 # 12.04.18, O.L. Pescott
 #rm(list=ls())
 library(countrycode) # could probably have used isocodes function from rgbif
+library(reshape2)
 
 # load function
 source(file = "scripts/retrieve_GBIF_checklists.R") # takes list of ISO (2 digit) codes
@@ -105,7 +106,18 @@ for (i in 1:nrow(AllHSGbifLists_df)){ # fill in new column of focal country name
 ## Need to create wide form too, i.e. a table where rows are the species and there are columns indicating known presence/absence in focal islands
 ## e.g. see compare_islandsCaribIASDb.R where this was done for the presence/absence data on invasives in that database alone
 head(allCountries_PlantsRandallOnly$AI)
+# only include species that were listed as HS threats based on pathway info
+GbifAllCountries_IASpls_df <- do.call(rbind, allCountries_PlantsRandallOnly)
+GbifAllCountries_IASpls_wide <- reshape2::dcast(GbifAllCountries_IASpls_df, matchedname ~ country, length)
+GbifAllCountries_IASpls_wide <- cbind(GbifAllCountries_IASpls_wide[,c(1)], allCountries_IASpls_wide[,colnames(allCountries_IASpls_wide) %in% unique(CNlist2_noNAs$reporter2iso)])
+names(GbifAllCountries_IASpls_wide)[1] <- "species"
+#write.csv(GbifAllCountries_IASpls_wide, file = "outputs/HSlists_fromGbif_WIDEform.csv", row.names = FALSE)
 
+## compare with the same output based on Carib IAS Db
+# look note differences for Abrus precatorius
+head(GbifAllCountries_IASpls_wide) # GBIF
+head(iasDbPl_ALL_invsWide) # Carib IAS Db # why is TC absent?
 
+## continue in combineGbif_CaribIAS.R
 
 ### END
