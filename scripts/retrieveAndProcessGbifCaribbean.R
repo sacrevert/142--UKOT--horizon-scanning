@@ -43,16 +43,18 @@ load(file = "outputs/allCountries_v4.1.Rdata")
 
 # screen against list of natives/Weber/Randall/other (after parsing those lists against gbif name lookup functions)
 # load in Randall data and use a similar approach to compare_islandsCaribIASDb.R to compare lists.
+## Update to include names from Carib IAS Db (randallCleanMatch_incCaribDb.csv)
 
-randallClean <- read.csv(file = "outputs/randallCleanMatch.csv", header = T, stringsAsFactors = F)
+#randallClean <- read.csv(file = "outputs/randallCleanMatch.csv", header = T, stringsAsFactors = F)
+randallClean <- read.csv(file = "outputs/randallCleanMatch_incCaribDb.csv", header = T, stringsAsFactors = F)
 randallClean$fullName <- paste(randallClean$matchedname, randallClean$authority) # create full name for matching
 
-# filter GBIF data so that only plant stuff remains
-extractPlants <- function(x) { x[x$phylum=="Tracheophyta" | x$phylum=="Bryophyta", ] } # just keep our lovely vascular plants and bryophytes
-allCountries_Plants <- lapply(allCountries, extractPlants)
-labelRandallPlants <- function(x) { merge(x = x, y = randallClean, by.x = "scientificName", by.y = "fullName", all.x = T, all.y = F) }
-allCountries_PlantsRandall <- lapply(allCountries_Plants, labelRandallPlants)
-# drop anything that wasn't in Randall
+# filter GBIF data so that only weedy plants (sensu Randall and the Caribbean IAS database) remain
+extractPlants <- function(x) { x[x$phylum=="Tracheophyta" | x$phylum=="Bryophyta", ] } # just keep vascular plants and bryophytes
+allCountries_Plants <- lapply(allCountries, extractPlants) # apply across list
+labelRandallPlants <- function(x) { merge(x = x, y = randallClean, by.x = "scientificName", by.y = "fullName", all.x = T, all.y = F) } # label weedy plants by merge
+allCountries_PlantsRandall <- lapply(allCountries_Plants, labelRandallPlants) # apply across lists
+# drop anything that wasn't in composite weed list
 filterInRandall <- function(x) { x[complete.cases(x),] }
 allCountries_PlantsRandallOnly <- lapply(allCountries_PlantsRandall, filterInRandall)
 
@@ -75,7 +77,7 @@ getThreats2 <- function(country = country, db = db, ...){
   partnerSubList <- db[names(db) %in% CNlist_tmp] # just get sublists we want (taking advantage of the names we gave each list)
   focal <- db[names(db) == country] # focal country
   HS_data <- list() # empty list for receiving data
-  HS_data <- lapply(partnerSubList, function(x) x[!(x$scientificName %in% focal$scientificName),]) # restrict to species not already recorded (according to GBIF) in focal country
+  HS_data <- lapply(partnerSubList, function(x) x[!(x$scientificName %in% focal[country][[1]]$scientificName),]) # restrict to species not already recorded (according to GBIF) in focal country
   HS_data_df <- do.call(rbind, HS_data) # flatten
   # reduce to unique names (don't need every name replicated where it appears in multiple partner countries)
   HS_data_df <- unique(HS_data_df[,c(1,3,5:6)])
@@ -92,9 +94,18 @@ AllHSGbifLists_df <- do.call(rbind, AllHSGbifLists)
 head(AllHSGbifLists_df)
 for (i in 1:nrow(AllHSGbifLists_df)){ # fill in new column of focal country names
         AllHSGbifLists_df$country_at_risk[i] <- substr(x = row.names(AllHSGbifLists_df)[i], start = 1, stop = 2)
-        }
-#write.csv(AllHSGbifLists_df, file = "outputs/HSlists_fromGbifAndRandall.csv", row.names = F)
+}
+#############################################################################################
+#write.csv(AllHSGbifLists_df, file = "outputs/HSlists_fromGbifAndRandall.csv", row.names = F) # ignore now in outputs/deprecated -- had an error in getThreats2()
+#############################################################################################
 
-# need to create wide form too
+# update now that 'Randall' includes invasives from Carib IAS Db
+#write.csv(AllHSGbifLists_df, file = "outputs/HSlists_fromGbifAndRandall_incCaribDb.csv", row.names = F)
 
-###
+## Need to create wide form too, i.e. a table where rows are the species and there are columns indicating known presence/absence in focal islands
+## e.g. see compare_islandsCaribIASDb.R where this was done for the presence/absence data on invasives in that database alone
+head(allCountries_PlantsRandallOnly$AI)
+
+
+
+### END

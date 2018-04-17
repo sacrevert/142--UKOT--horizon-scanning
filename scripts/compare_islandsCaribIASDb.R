@@ -19,14 +19,14 @@ CNlist2_noNAs <- CNlist2[!is.na(CNlist2$partner2iso),]
 # just extract the key info for the moment
 CNlist2_noNAs <- CNlist2_noNAs[,c(3,5,28:30)] # focus, partner, source of pathway info, focal ISO, partner ISO
 
-# example of process for AI
-ai_UniPart <- unique(CNlist2_noNAs[CNlist2_noNAs$reporter=="Anguilla",]$partner2iso)
-iasDbPl_ai_partners <- iasDbPl_ALL_Std[iasDbPl_ALL_Std$iso2code %in% ai_UniPart,]
-iasDbPl_ai <- iasDbPl_ALL_Std[iasDbPl_ALL_Std$iso2code == "AI",]
-iasDbPl_ai_HS <- iasDbPl_ai_partners[!(iasDbPl_ai_partners$Species.Name %in% iasDbPl_ai$Species.Name),]
-length(unique(iasDbPl_ai_HS$Species.Name[iasDbPl_ai_HS$status == "invasive"])) # 268
+# example of process for AI (Anguilla)
+#ai_UniPart <- unique(CNlist2_noNAs[CNlist2_noNAs$reporter=="Anguilla",]$partner2iso)
+#iasDbPl_ai_partners <- iasDbPl_ALL_Std[iasDbPl_ALL_Std$iso2code %in% ai_UniPart,]
+#iasDbPl_ai <- iasDbPl_ALL_Std[iasDbPl_ALL_Std$iso2code == "AI",]
+#iasDbPl_ai_HS <- iasDbPl_ai_partners[!(iasDbPl_ai_partners$Species.Name %in% iasDbPl_ai$Species.Name),]
+#length(unique(iasDbPl_ai_HS$Species.Name[iasDbPl_ai_HS$status == "invasive"])) # 268
 
-# turn into a function
+# turn process into a function
 getThreats <- function(country = country, db = db, ...){
   CNlist_tmp <- unique(CNlist2_noNAs[CNlist2_noNAs$reporter2iso==country,]$partner2iso) # get appropriate list of partner data
   partner_data <- db[db$iso2code %in% CNlist_tmp,] # filter db based on list of partners

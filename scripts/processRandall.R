@@ -3,7 +3,7 @@
 # Weed list originally from https://www.invasivespeciesinfo.gov/resources/listsintl.shtml and processed using Notepadd++ and sed (in cygwin)
 # to extract the following (see W:\PYWELL_SHARED\Pywell Projects\BRC\Oli Pescott\142 UKOT Horizon Scanning\_Methods\plant_technical_work\rProj_UKOT\data\regexp_for_Randall.txt)
 rm(list=ls())
-library(taxizedb)
+library(taxize)
 library(rgbif)
 
 randall <- read.csv(file = "data/randallCSV_postSED.csv", header = F, stringsAsFactors = F)
@@ -35,5 +35,35 @@ full_info_UNI <- full_info_UNI[,c(3,4,2,5:6)] # drop first column and reorder sl
 
 # write fully matched Randall data out
 #write.csv(full_info_UNI, file = "outputs/randallCleanMatch.csv", row.names = F)
+
+## Update in order to add the invasives from the Caribbean IAS Db to this Randall list
+# 17 04 2018, OL Pescott
+randallClean <- read.csv(file = "outputs/randallCleanMatch.csv", header = T, stringsAsFactors = F)
+# read in Carib IAS Db info and process (as in compare_islandsCaribIASDb.R, ~L6-L9)
+# previously processed IAS Db for Caribbean (see processCaribIASDb.R)
+iasDbPl_ALL_Std <- read.csv(file = "outputs/IASCaribDb_Plants_longform_FINAL.csv", header = T, stringsAsFactors = F)[,c(2:7)] # avoid uncessary 1st column of row numbers
+iasDbPl_ALL_Std$Species.Name <- gsub("\n", " ", x = iasDbPl_ALL_Std$Species.Name)
+iasDbPl_ALL_Std$Species.Name <- gsub("[-(-^0-9)]$", "", x = iasDbPl_ALL_Std$Species.Name) # remove any non-alphabetic character from end of string
+# filter to invasives
+iasDbPl_ALL_invs <- iasDbPl_ALL_Std[iasDbPl_ALL_Std$status=="invasive",]
+# remove genus levels
+iasDbPl_ALL_invsSpp <- iasDbPl_ALL_invs[!grepl("spp", iasDbPl_ALL_invs$Species.Name),]
+
+# Process via tnrs and get_gbif so that we have the same info as for Randall
+full_infoCaribIAS <- taxize::tnrs(query = iasDbPl_ALL_invsSpp$Species.Name, source = "iPlant_TNRS", splitby = 100, sleep = 5, code = "ICBN")
+# remove blanks
+full_infoCaribIAS <- full_infoCaribIAS[!full_infoCaribIAS$acceptedname=="",]
+# get GBIF ids for accepted names
+GBIF_idCaribIAS <- taxize::get_gbifid(full_infoCaribIAS$acceptedname, rows = 1, phylum = "Tracheophyta", rank = "species")
+full_infoCaribIAS$GBIF_id <- GBIF_idCaribIAS
+full_infoCaribIAS_UNI <- unique(full_infoCaribIAS[,c(2:3,5:8)])
+full_infoCaribIAS_UNI <- full_infoCaribIAS_UNI[order(full_infoCaribIAS_UNI$acceptedname),]
+row.names(full_infoCaribIAS_UNI) <- 1:nrow(full_infoCaribIAS_UNI)
+full_infoCaribIAS_UNI <- full_infoCaribIAS_UNI[,c(3,4,2,5:6)] # drop first column and reorder slightly
+
+# Combine with previously processed Randall data
+full_infov2 <- rbind(randallClean, full_infoCaribIAS_UNI)
+full_infov2 <- unique(full_infov2)
+#write.csv(full_infov2, file = "outputs/randallCleanMatch_incCaribDb.csv", row.names = F)
 
 ### END
