@@ -1,4 +1,4 @@
-#### We have tables of IAS versus species for both the GBIF and Carib IAS datasets
+#### We have tables of IAS versus country for both the GBIF and Carib IAS datasets
 #### combine to allow for comparisons and final sorting for HS spreadsheet
 # 17.04.18, O.L. Pescott
 #rm(list=ls())
