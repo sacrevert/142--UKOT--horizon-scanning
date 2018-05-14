@@ -1,0 +1,31 @@
+### We have  lists from Danielle and previous work (GBIF, Caribbean database)
+### and list from BNM (TCI), combine those here and condense so one row for species
+# 14.05.2018, O.L. Pescott
+#rm(list=ls())
+
+dat1 <- read.csv(file = "outputs/comparisonCombined_v1.1.csv", header = T, stringsAsFactors = F)
+datBNM <- read.csv(file = "outputs/comparisonCombined_v1.0_Manco_TC.csv", header = T, stringsAsFactors = F)
+head(datBNM)
+# drop columns to avoid duplication
+datBNM <- datBNM[,c(1,8)]
+# merge
+dat2 <- merge(dat1, datBNM, by.x = "species", by.y = "species", all = T)
+head(dat2); tail(dat2)
+dat2 <- dat2[,c(1:7,9,8)] # rearrange
+
+# remove duplicated rows first
+dat3 <- aggregate(cbind(AI, BM, KY, MS, TC, VG, bnm_TC) ~ species, data = dat2, FUN = sum)
+head(dat3)
+dat3[,c(2:8)] <- ifelse(dat3[,c(2:8)]>0, 1, 0)
+
+# keep note of discrepancies for TCI for later
+dat3$TC_discrep <- dat3$TC - dat3$bnm_TC
+dat3$TC <- NULL
+names(dat3)[7] <- "TC"
+head(dat3)
+dat3 <- dat3[order(dat3$species),]
+
+# write out
+write.csv(dat3, file = "outputs/comparisonCombined_v2.0.csv")
+
+## END
