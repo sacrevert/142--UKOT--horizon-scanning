@@ -29,7 +29,7 @@ dat3 <- dat3[order(dat3$species),]
 dat3names <- taxize::tnrs(query = dat3$species, source = "iPlant_TNRS", splitby = 100, sleep = 5, code = "ICBN")
 # note that some names have no match...! 
 dat4 <- merge(dat3, dat3names, by.x = "species", by.y = "submittedname", all.x = T, all.y = F)
-## sort mismatches manually in v2.1
+## sort mismatches manually in v2.1, then save as v2.2
 # write out
 write.csv(dat4, file = "outputs/comparisonCombined_v2.0.csv", row.names = F)
 
