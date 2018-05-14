@@ -21,11 +21,11 @@ dat3[,c(2:8)] <- ifelse(dat3[,c(2:8)]>0, 1, 0)
 # keep note of discrepancies for TCI for later
 dat3$TC_discrep <- dat3$TC - dat3$bnm_TC
 dat3$TC <- NULL
-names(dat3)[7] <- "TC"
+names(dat3)[7] <- "TC" # promote assessment from BN Manco, TCI
 head(dat3)
 dat3 <- dat3[order(dat3$species),]
 
 # write out
-write.csv(dat3, file = "outputs/comparisonCombined_v2.0.csv")
+write.csv(dat3, file = "outputs/comparisonCombined_v2.0.csv", row.names = F)
 
 ## END
