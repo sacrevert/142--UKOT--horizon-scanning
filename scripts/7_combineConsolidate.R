@@ -1,5 +1,5 @@
 ### We have  lists from Danielle and previous work (GBIF, Caribbean database)
-### and list from BNM (TCI), combine those here and condense so one row for species
+### and list from B.N. Manco (TCI, 12.05.2018), combine those here and condense so one row for species
 # 14.05.2018, O.L. Pescott
 #rm(list=ls())
 
@@ -25,7 +25,12 @@ names(dat3)[7] <- "TC" # promote assessment from BN Manco, TCI
 head(dat3)
 dat3 <- dat3[order(dat3$species),]
 
+# there are still some synonymy issues (e.g. Panicum maximum is Urochlola maxima), sort these too
+dat3names <- taxize::tnrs(query = dat3$species, source = "iPlant_TNRS", splitby = 100, sleep = 5, code = "ICBN")
+# note that some names have no match...! 
+dat4 <- merge(dat3, dat3names, by.x = "species", by.y = "submittedname", all.x = T, all.y = F)
+## sort mismatches manually in v2.1
 # write out
-write.csv(dat3, file = "outputs/comparisonCombined_v2.0.csv", row.names = F)
+write.csv(dat4, file = "outputs/comparisonCombined_v2.0.csv", row.names = F)
 
 ## END
