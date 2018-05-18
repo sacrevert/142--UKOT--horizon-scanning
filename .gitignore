@@ -1,5 +1,6 @@
 scripts/deprecated
 outputs/deprecated
+outputs/non-R
 notes/
 .Rproj.user
 .Rhistory

@@ -23,7 +23,7 @@ getSppLists <- function (country = country, ...) {
     else {
     # need to use speciesKey return in order to get the names and higher taxon information using rgbif::name_usage
     out2 <- as.data.frame(out1$facets$speciesKey)
-    out3 <- list() # empty list for all the 
+    out3 <- list() # empty list for all the retrieved data
     out3 <- tryCatch(lapply(out2[,'name'], function(x) {tmp <- rgbif::name_usage(key = x, rank = c("phylum", "order"))
                                                 if("order" %in% colnames(tmp$data) & "phylum" %in% colnames(tmp$data)) {tmp}
                                                 else {}

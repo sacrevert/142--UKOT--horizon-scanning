@@ -33,4 +33,23 @@ dat4 <- merge(dat3, dat3names, by.x = "species", by.y = "submittedname", all.x =
 # write out
 write.csv(dat4, file = "outputs/comparisonCombined_v2.0.csv", row.names = F)
 
+# would be useful to have some information on family as well
+library(rgbif)
+dat5 <- read.csv(file = "outputs/comparisonCombined_v2.2.csv", header = T, stringsAsFactors = F)
+
+dat5families <- list()
+getFamily <- function() { out1 <- tryCatch(x, function(x) { tmp <- rgbif::name_usage(key = name_lookup(x, limit=1)$data[1,1], rank = c("family"))
+                                         if("family" %in% colnames(tmp2$data)) {tmp}
+                                         else {}
+                                          }, 
+                          error = function(err) NULL)
+  if (is.null(out1)) {NULL} # move on (e.g. to next country in list is being used with an apply function) if this step has failed
+    else { # extract and simplify structure of data returned
+      out2 <- do.call(rbind, lapply(lapply(out1, '[[', 'data'), function(x) as.data.frame(x[,c('scientificName','family')]))) # works even if list out4 has NULL elements
+      return(out2)
+        }
+  }
+
+dat5families <- lapply(dat5[c(1:2),c("acceptedname")], function(x) getFamily(x))
+
 ## END
