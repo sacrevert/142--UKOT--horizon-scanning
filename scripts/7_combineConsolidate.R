@@ -33,6 +33,12 @@ dat4 <- merge(dat3, dat3names, by.x = "species", by.y = "submittedname", all.x =
 # write out
 write.csv(dat4, file = "outputs/comparisonCombined_v2.0.csv", row.names = F)
 
+
+#########
+#
+# Below stuff was not completed
+#
+#########
 # would be useful to have some information on family as well
 library(rgbif)
 dat5 <- read.csv(file = "outputs/comparisonCombined_v2.2.csv", header = T, stringsAsFactors = F)
