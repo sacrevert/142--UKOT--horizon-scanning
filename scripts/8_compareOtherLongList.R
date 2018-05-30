@@ -32,3 +32,14 @@ datWdFINAL <- datWdFINAL[order(datWdFINAL$Any_A),]
 
 # write out list of names that we can add to the master sheet
 write.csv(datWdFINAL, file = "outputs/priorSpecies_KGclimate_toAdd.csv")
+
+### Also standardise names in the HWRA sheets
+datWRA <- read.csv(file = "W:\\PYWELL_SHARED\\Pywell Projects\\BRC\\Oli Pescott\\142 UKOT Horizon Scanning\\_Methods\\plant_technical_work\\142--UKOT--horizon-scanning\\data\\All_HPWRA.csv", header = T, stringsAsFactors = F)
+# add standard name
+datWRAnames <- taxize::tnrs(query = datWRA$Taxa, source = "iPlant_TNRS", splitby = 10, sleep = 1, code = "ICBN")
+# write
+write.csv(datWRAnames, file = "C:\\Users\\olipes\\Desktop\\GrandCayman_week\\WRAnames.csv")
+
+# match
+datWRAmatch <- merge(datWRA, datWRAnames, by.x = "Taxa", by.y = "submittedname", all.x = T, all.y = F)
+write.csv(datWRAmatch, file = "C:\\Users\\olipes\\Desktop\\GrandCayman_week\\WRAwithNames.csv")
