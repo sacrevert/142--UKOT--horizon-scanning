@@ -2,22 +2,23 @@
 # 24.07.2018, O.L. Pescott
 #rm(list=ls())
 
+# Data from Key (2016) -- non-natives known on BIOT
 dat <- read.csv(file = "data/knownBIOTPlants.csv", header = T, stringsAsFactors = F)
-# add standard name
+# add standard name courtesy of TNRS
 datStdnames <- taxize::tnrs(query = dat$Species, source = "iPlant_TNRS", splitby = 10, sleep = 1, code = "ICBN")
 datStdnames$BIOT <- "Y"
 
-# pre-workshop final Caribbean data
+# pre-workshop final Caribbean data for comparison (names previously standardised in the same way)
 datCarib <- read.csv(file = "outputs/comparisonCombined_v2.2.csv", header = T, stringsAsFactors = F)
 head(datCarib)
 head(datStdnames)
-# fix one error
+# fix one error (should stop using tnrs! better options exist!) See work with Gabrielle
 datStdnames[datStdnames$submittedname=="Alocasia macrorrhiza",]$acceptedname <- "Alocasia macrorrhizos"
 
 # check status in Caribbean
 dat2 <- merge(datStdnames, datCarib, by.x = "acceptedname", by.y = "acceptedname", all.x = T, all.y = T)
 
-# write out
+# write out comparison
 write.csv(dat2, file = "outputs/BIOT_Carib_comparison_v1.0.csv", row.names = F)
 
 ## Get BIOT data from GBIF
@@ -25,6 +26,7 @@ biotGbif <- getSppLists(country = "IO")
 # limit to plants
 biotGbif_Plants <- biotGbif[biotGbif$phylum=="Tracheophyta" | biotGbif$phylum=="Bryophyta", ]
 #save(biotGbif_Plants, file = "outputs/biotGbif_plants.Rdata")
+#write.csv(biotGbif_Plants, file = "outputs/biotGbif_plants.csv", row.names = F)
 
 ## Maybe also get Maldives and Seychelles lists and screen against Carib DB and Randall again?
 countries = c("SC", "MV")
@@ -43,7 +45,7 @@ randallClean$fullName <- paste(randallClean$matchedname, randallClean$authority)
 biotGbif_plantsWeeds <- merge(x = biotGbif_Plants, y = randallClean, by.x = "scientificName", by.y = "fullName", all.x = T, all.y = F) # label weedy plants by merge
 #######################
 biotGbif_plantsWeeds ## Plants that are already in BIOT, according to GBIF, and which are weedy 
-#save(biotGbif_plantsWeeds, file = "outputs/biotGbif_plantsWeeds.csv")
+#write.csv(biotGbif_plantsWeeds, file = "outputs/biotGbif_plantsWeeds.csv", row.names =F)
 #######################
 
 
@@ -62,3 +64,13 @@ SC_MV_PlantsRandall_wide <- reshape2::dcast(SC_MV_PlantsRandallonly_df, matchedn
 # weedy plants found on Maldives and on Seychelles from GBIF
 ########################
 write.csv(SC_MV_PlantsRandall_wide, file = "outputs/SC_MV_PlantsRandall_wide.csv", row.names = F)
+
+#######
+# Check long list (compiled of Maldives and Seychelles weeds plus Caribbean high scorers) against BIOT gbif data
+biotLL <- read.csv(file = "outputs/biotLongList.csv", header = T)
+biotLLnames <- taxize::tnrs(query = biotLL$speciesName, source = "iPlant_TNRS", splitby = 10, sleep = 1, code = "ICBN")
+
+# merge with BIOT gbif data
+biotLLnames$fullName <- paste(biotLLnames$matchedname, biotLLnames$authority)
+biotLLnames_GBIFchk <- merge(biotLLnames, biotGbif_Plants, by.x = "fullName", by.y = "scientificName", all.x = T, all.y = F)
+write.csv(biotLLnames_GBIFchk, file = "outputs/biotLLnames_GBIFchk.csv", row.names = F)
