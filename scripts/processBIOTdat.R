@@ -43,6 +43,7 @@ randallClean$fullName <- paste(randallClean$matchedname, randallClean$authority)
 biotGbif_plantsWeeds <- merge(x = biotGbif_Plants, y = randallClean, by.x = "scientificName", by.y = "fullName", all.x = T, all.y = F) # label weedy plants by merge
 #######################
 biotGbif_plantsWeeds ## Plants that are already in BIOT, according to GBIF, and which are weedy 
+#save(biotGbif_plantsWeeds, file = "outputs/biotGbif_plantsWeeds.csv")
 #######################
 
 
@@ -53,5 +54,11 @@ SC_MV_PlantsRandall <- lapply(otherGbif_Plants, labelRandallPlants) # apply acro
 filterInRandall <- function(x) { x[complete.cases(x),] }
 SC_MV_PlantsRandallonly <- lapply(SC_MV_PlantsRandall, filterInRandall)
 # combine to df
-SC_MV_PlantsRandall <- do.call(rbind, SC_MV_PlantsRandall)
+SC_MV_PlantsRandallonly_df <- do.call(rbind, SC_MV_PlantsRandallonly)
+SC_MV_PlantsRandall_wide <- reshape2::dcast(SC_MV_PlantsRandallonly_df, matchedname ~ country, length)
 
+# write out
+########################
+# weedy plants found on Maldives and on Seychelles from GBIF
+########################
+write.csv(SC_MV_PlantsRandall_wide, file = "outputs/SC_MV_PlantsRandall_wide.csv", row.names = F)
